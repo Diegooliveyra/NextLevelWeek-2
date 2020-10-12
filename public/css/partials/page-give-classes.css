@@ -33,11 +33,12 @@
 #page-give-classes fieldset legend button {
   background: none;
   border: 0;
-  margin-left: 20px;
   color: var(--color-primary);
   font: 700 1.6rem Archivo;
   cursor: pointer;
-  transition: 0.2;
+  transition: color 0.2;
+  display: flex;
+  margin-top: 15px;
 }
 
 #page-give-classes fieldset legend button:hover {
@@ -115,9 +116,8 @@
     grid-template-columns: 2fr 1fr 1fr;
     column-gap: 1.6rem;
   }
-
-  #page-give-classes #schedule-items .input-block + .input-block,
-  #page-give-classes #schedule-items .select-block + .input-block {
+  #page-give-classes #schedule-itens .input-block + .input-block,
+  #page-give-classes #schedule-itens .select-block + .input-block {
     margin-top: 0;
   }
 
