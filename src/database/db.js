@@ -13,7 +13,7 @@ function execute(db) {
     
     CREATE TABLE IF NOT EXISTS classes (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      subject TEXT,
+      subject INTEGER,
       cost TEXT,
       proffy_id INTEGER
       );
@@ -28,4 +28,4 @@ function execute(db) {
         `);
 }
 
-module.exports = Database.open(__dirname + "/database.sqlite").then(execute);
+module.exports =  Database.open(__dirname + "/database.sqlite").then(execute);

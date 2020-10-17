@@ -13,7 +13,7 @@ Database.then(async(db) => {
   };
 
   classValue = {
-    subject: "Logica de Programação",
+    subject: 1,
     cost: "20,00"
   };
 
@@ -30,7 +30,32 @@ Database.then(async(db) => {
     },
   ];
 
- await createProffy(db, {proffyValue,classValue,classScheduleValues})
+// await createProffy(db, {proffyValue,classValue,classScheduleValues})
 
   // Consultar Dados
+
+  //todos os proffs
+  const selectedProffys = await db.all("SELECT * FROM proffys")
+
+  //consultar as classe de um determinado professor
+  //e trazer junto os dados do professor
+  const selectedClassesAndProffys = await db.all(`
+      SELECT classes.*,proffys.*
+      FROM proffys
+      JOIN classes ON (classes.proffy_id = proffys.id)
+      WHERE classes.proffy_id = "1"
+  `)
+
+  console.log(selectedClassesAndProffys)
+
+  const selectClassesShedule = await db.all(`
+    SELECT class_schedule.*
+    FROM class_schedule
+    WHERE class_schedule.class_id = "1"
+    AND class_schedule.weekday = "0"
+    AND class_schedule.time_from <= "520"
+    AND class_schedule.time_to > "520"
+  `)
+
+  console.log(selectClassesShedule)
 });
