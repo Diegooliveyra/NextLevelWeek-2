@@ -59,32 +59,40 @@
         </div>
       </header>
       <main>
-        {%for proffy in proffys %}
-        <article class="teacher-item">
-          <header>
-            <img
-              src={{proffy.avatar}}
-              alt="{{proffy.name}}"
-            />
-            <div>
-              <strong>{{proffy.name}}</strong>
-              <span>{{proffy.subject}}</span>
-            </div>
-          </header>
+        {% if proffys == "" %}
 
-          <p>
-            {{proffy.bio}}
-          </p>
+        <p class="no-results"> Nenhum professor encontrado com a sua pesquisa </p>
 
-          <footer>
-            <p>Preço/hora<strong>R$ {{proffy.cost}}</strong></p>
-            <a href="https://api.whatsapp.com/send?phone={{proffy.whatsapp}}&text=Ol%C3%A1%20{{proffy.name}}%2C%20tenho%20interesse%20na%20sua%20aula%20de%20{{proffy.subject}}" class="button" target="_blank">
-              <img src="/images/icons/whatsapp.svg" alt="Whatsapp" />Entrar em
-              contato
-            </a>
-          </footer>
-        </article>
-        {%endfor%}
+        {% else %}
+
+          {%for proffy in proffys %}
+          <article class="teacher-item">
+            <header>
+              <img
+                src={{proffy.avatar}}
+                alt="{{proffy.name}}"
+              />
+              <div>
+                <strong>{{proffy.name}}</strong>
+                <span>{{proffy.subject}}</span>
+              </div>
+            </header>
+
+            <p>
+              {{proffy.bio}}
+            </p>
+
+            <footer>
+              <p>Preço/hora<strong>R$ {{proffy.cost}}</strong></p>
+              <a href="https://api.whatsapp.com/send?phone={{proffy.whatsapp}}&text=Ol%C3%A1%20{{proffy.name}}%2C%20tenho%20interesse%20na%20sua%20aula%20de%20{{proffy.subject}}" class="button" target="_blank">
+                <img src="/images/icons/whatsapp.svg" alt="Whatsapp" />Entrar em
+                contato
+              </a>
+            </footer>
+          </article>
+          {%endfor%}
+
+         {% endif %}
        
       </main>
     </div>
