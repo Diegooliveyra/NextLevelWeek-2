@@ -1,4 +1,4 @@
-<p align='center'><img width='200' src="../.github/logo.png></p>
+<p align='center'><img width='200' src="./.github/logo.png></p>
 <h1 align='center'>NLW #2- Next Level Week 2</h1>
 <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Diegooliveyra/NextLevelWeek-2">
