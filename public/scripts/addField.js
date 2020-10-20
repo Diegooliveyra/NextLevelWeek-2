@@ -10,5 +10,5 @@ function cloneField(){
   })
   
   document.querySelector('#schedule-itens').appendChild($newFieldContainer)
-  console.log($fields)
+  
 }
