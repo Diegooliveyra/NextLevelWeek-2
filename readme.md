@@ -1,4 +1,4 @@
-<p align='center'><img width='200' src="./.github/logo.png></p>
+<p align='center'><img width='200' src="./.github/logo.png"></p>
 <h1 align='center'>NLW #2- Next Level Week 2</h1>
 <p align='center'>
 <img src="https://img.shields.io/github/repo-size/Diegooliveyra/NextLevelWeek-2">
@@ -74,7 +74,7 @@ Feito isso, basta executar o procedimento de rodar o projeto, cadastrar professo
 <img src="./.github/web-home.png">
 <img src="./.github/web-give-classes.png">
 <img src="./.github/mobile-preview.png">
-<img src="./.github/Preview-Functionality.png">
+<img src="./.github/Preview-Functionality.gif">
 
 <h3>📝 Licença</h3>
 <p>O projeto se encontra sob licença MIT. Para mais detalhes, acesse <a href='LICENSE'>license<a>.</p>
