@@ -7,7 +7,7 @@
 </p>
 
 <h3>🔖 Descrição</h3>
-<p>rojeto desenvolvido durante a NLW #2- Next Level Week 2 oferecida pela Rocketseat. O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.<p>
+<p>Projeto desenvolvido durante a NLW #2- Next Level Week 2 oferecida pela Rocketseat. O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.<p>
 
 <p>👨‍🏫 Proffy - O projeto surgiu com a missão de trazer uma homenagem aos educadores do Brasil, através de uma plataforma que conecta alunos e professores de diversas matérias. Todo o desenvolvimento foi feito na semana do dia nacional dos profissionais de educação.
 A mim este projeto teve o caráter fundamental de reforçar as bases do desenvolvimento front-end, principalmente com HTML e CSS.<p>
